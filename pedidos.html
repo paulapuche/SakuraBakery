@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1, minimum-scale=1">
+	<title>SAKURA bakery</title>
+	<link rel="stylesheet" href="./css/estilos.css">
+	<script src="https://kit.fontawesome.com/41ab82016d.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Source+Serif+Pro:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400&display=swap" rel="stylesheet">
+	<script src="./js/validarpedidos.js"></script>
+</head>
+<body>
+	<header class="header" id="header">
+		<div class="contenedor">
+			<a href="index.html" class="logo" id="logo">SAKURA</a>
+			<span class="nav-bar" id="btn-menu"><i class="fa fa-bars btn-estilo"></i></span>
+			<nav class="nav" id="nav">
+				<ul class="menu">
+					<li class="menu__item"><a class="menu__link" href="nosotros.html" id="menu__link">Nosotros</a></li>
+					<li class="menu__item"><a class="menu__link" href="sucursales.html" id="menu__link">Sucursales</a></li>
+					<li class="menu__item"><a class="menu__link" href="productos.html" id="menu__link">Productos</a></li>
+					<li class="menu__item"><a class="menu__link" href="contacto.html" id="menu__link">Contacto</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>	
+	<h1 id="titulo">PEDIDOS</h1>
+	<div class="pedido_box">
+		<img src="./img/galeria6.jpg" alt="pedido" class="pedido">
+		<form id="form" action="" class="form" onsubmit="return validar();">
+			<h3 class="tag">Hacé tu pedido desde la comodidad de tu hogar</h3>
+			<label for="nombre">Nombre completo <span>*</span></label>
+			<input name="nombre" type="text" id="nombre"  value=""><br>
+			<label for="telefono">Teléfono <span>*</span></label>
+			<input name="telefono" type="text" id="telefono" value=""><br>
+			<label for="direccion">Dirección <span>*</span></label>
+			<input name="direccion" type="text" id="direccion" value=""><br>
+			<label for="pedido">Pedido</label>
+			<textarea name="pedido" id="pedido" cols="30" rows="10"></textarea><br>
+			<button type="submit" class="btn-enviar">ENVIAR</button>
+		</form>
+	</div>
+	<footer class="footer" id="footer">
+		<div class="contenedor">
+			<div class="icon-logo">
+				<a href="index.html" class="logo">
+					<p class="nombre1">SAKURA</p>
+					<p class="nombre2">bakery shop</p>
+				</a>
+			</div>
+		<div class="social">
+			<a href="https://www.facebook.com" class="fa fa-facebook"></a>
+			<a href="https://www.instagram.com" class="fa fa-instagram"></a>
+			<a href="https://www.whatsapp.com" class="fa fa-whatsapp"></a>
+		</div>
+		<p class="copy">&copy; SAKURA 2022 - Todos los derechos reservados.</p>
+		</div>
+	</footer>
+
+<script src="./js/menu.js"></script>
+</body>
+</html>
