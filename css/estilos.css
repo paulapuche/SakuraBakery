@@ -153,12 +153,12 @@ img {
 }
 
 .banner__txt {
-  display: none;
   font-family: 'Source Serif Pro', serif;
 }
 
-.banner .contenedor2 {
+.banner .contenedor {
   display: none;
+  font-family: 'DM Serif Display', serif;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -661,13 +661,20 @@ img {
 
 @media (min-width: 680px) and (max-width: 1000px) {
 
+.banner .contenedor {
+  display: block;
+}
+
 .banner .contenedor .banner__titulo {
   font-size: 60px;
   letter-spacing: 3px;
+  margin-bottom: 0;
 }
 
 .banner .contenedor .banner__txt {
   font-size: 30px;
+  margin-top: 0;
+  font-style: italic;
 }
 
 .contenido .card-box {
@@ -814,13 +821,20 @@ img {
   font-size: 40px;
 }
 
+.banner .contenedor {
+  display: block;
+}
+
 .banner .contenedor .banner__titulo {
   font-size: 80px;
   letter-spacing: 4px;
+  margin-bottom: 0;
 }
 
 .banner .contenedor .banner__txt {
   font-size: 40px;
+  font-style: italic;
+  margin-top: 0;
 }
 
 .contenido .card-box {
